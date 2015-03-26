@@ -1,6 +1,7 @@
 #Monicelli support in Atom
 
-Add syntax highlighting to Monicelli files in Atom
+Add syntax highlighting to [Monicelli](https://github.com/esseks/monicelli)
+files in Atom
 
 ##Authors
 
