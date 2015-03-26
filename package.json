@@ -1,6 +1,6 @@
 {
   "name": "language-monicelli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Monicelli language support in Atom, come se fosse antani.",
   "license": "GPL-3.0",
   "homepage": "https://github.com/esseks/language-monicelli",
