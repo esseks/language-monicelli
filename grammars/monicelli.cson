@@ -52,8 +52,10 @@
         'name': 'storage.type.monicelli'
       '3':
         'name': 'entity.name.function.monicelli'
+      '4':
+        'name': 'punctuation.definition.parameters.begin.monicelli'
 
-    'match': '\\b(blinda la supercazzo[lr]a)(?:\\s+(Necchi|Mascetti|Perozzi|Melandri|Sassaroli))?\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'match': '\\b(blinda la supercazzo[lr]a)(?:\\s+(Necchi|Mascetti|Perozzi|Melandri|Sassaroli))?\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+(con)\\b'
   }
   { # Function call
     'captures':
