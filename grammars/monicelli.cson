@@ -1,0 +1,85 @@
+'comment': 'Monicelli Syntax: version 0.1'
+'fileTypes': ['mc']
+'name': 'Monicelli'
+'scopeName': 'source.monicelli'
+'patterns': [
+  { # Loop
+    'match': '\\b(stuzzica|e [bp]rematura anche, se)\\b'
+    'name': 'keyword.control.monicelli'
+  }
+  { # Branch
+    'match': '\\b(che cos\'(è|e`)|o magari|o tarapia tapioco|e velocit(à|a`) di esecuzione)\\b'
+    'name': 'keyword.control.monicelli'
+  }
+  { # Other control statements
+    'match': '\\b(vaffanzum)\\b'
+    'name': 'keyword.control.monicelli'
+  }
+  { # Operators
+    'match': '\\b(pi(ù|u`)|meno|per|diviso|con scappellamento a|sinistra|destra|(minore|maggiore)( o uguale)? (a|di))\\b'
+    'name': 'keyword.operator.monicelli'
+  }
+  { # Assignment
+    'match': '\\bcome( se)? fosse\\b'
+    'name': 'keyword.operator.monicelli'
+  }
+  { # Types
+    'match': '\\b(Necchi|Mascetti|Perozzi|Melandri|Sassaroli)\\b'
+    'name': 'storage.type.monicelli'
+  }
+  { # Type modifiers
+    'match': '\\b(conte)\\b'
+    'name': 'storage.modifier.monicelli'
+  }
+  { # Numerical literals
+    'match': '\\b[-+]?((\\d*".")?\\d+|\\d+".")([eE][-+]?\\d+)?\\b'
+    'name': 'constant.numeric.monicelli'
+  }
+  { # Builtins
+    'match': '\\b(a posterdati|ho visto|mi porga|avvertite don ulrico)\\b'
+    'name': 'support.function.monicelli'
+  }
+  { # Comments
+    'begin': '(#|bituma)'
+    'end': '\\n'
+    'name': 'comment.line.monicelli'
+  }
+  { # Function definition
+    'captures':
+      '1':
+        'name': 'keyword.control.monicelli'
+      '2':
+        'name': 'storage.type.monicelli'
+      '3':
+        'name': 'entity.name.function.monicelli'
+
+    'match': '\\b(blinda la supercazzo[lr]a)(?:\\s+(Necchi|Mascetti|Perozzi|Melandri|Sassaroli))?\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b'
+  }
+  { # Function call
+    'captures':
+      '1':
+        'name': 'keyword.control.monicelli'
+      '2':
+        'name': 'entity.name.function.monicelli'
+      '3':
+        'name': 'punctuation.definition.parameters.begin.monicelli'
+
+    'match': '\\b([bp]rematurata la supercazzo[lr]a)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s+(con)\\b'
+  }
+  { # End function call/def
+    'match': '\\bo scherziamo\\?\\b'
+    'name': 'punctuation.definition.parameters.end.monicelli'
+  }
+  { # Variable declaration
+    'match': '\\bvoglio\\b'
+    'name': 'keyword.control.monicelli'
+  }
+  { # Main
+    'match': '\\bLei ha clacsonato\\b'
+    'name': 'entity.name.function.main.monicelli'
+  }
+  { # Articles
+    'match': '\\b(il|lo|la|i|gli|le|un|una|dei|delle|l\'|un\')\\b'
+    'name': 'support.other.monicelli'
+  }
+]
