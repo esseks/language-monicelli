@@ -1,0 +1,5 @@
+'.source.monicelli':
+  'editor':
+    'autoIndentOnPaste': false
+    'tabLength': 4
+    'commentStart': 'bituma '
